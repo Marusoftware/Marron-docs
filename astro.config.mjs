@@ -6,21 +6,18 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Marron',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/Marusoftware/Marron',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'About Marron',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Core cocepts', slug: 'about/core' },
+						{ label: 'Contribution', slug: 'about/contribution' },
 					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
 				},
 			],
 		}),
