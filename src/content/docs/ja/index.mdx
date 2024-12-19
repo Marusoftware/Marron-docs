@@ -1,0 +1,37 @@
+---
+title: Marron ドキュメントへようこそ!
+description: Marusoftware は真の Integrated Development Environment の開発に取り組んでいます。
+template: splash
+hero:
+  tagline: Marusoftware は真の Integrated Development Environment の開発に取り組んでいます。
+  image:
+    file: ../../../assets/marron.png
+  actions:
+    - text: Marron について
+      link: ./about/core
+      icon: right-arrow
+    - text: サインアップ(準備中)
+      link: ./#
+      icon: right-arrow
+      variant: minimal
+      disabled: true
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Overview
+
+<CardGrid stagger>
+	<Card title="連携" icon="random">
+		ユーザとソフトウェアとハードウェアを緊密につなぎます。
+	</Card>
+	<Card title="辛い仕事の削減" icon="rocket">
+		計画、開発、展開における無駄な作業を減らします。
+	</Card>
+	{/* <Card title="Configure your site" icon="setting">
+		Edit your `sidebar` and other config in `astro.config.mjs`.
+	</Card>
+	<Card title="Read the docs" icon="open-book">
+		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	</Card> */}
+</CardGrid> 
