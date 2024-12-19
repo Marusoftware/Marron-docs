@@ -1,19 +1,26 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightLinksValidator from 'starlight-links-validator';
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://marron.marusoftware.net",
+	trailingSlash:"always",
 	integrations: [
 		starlight({
 			title: 'Marron',
 			social: {
+				discord: 'https://discord.gg/hkBKdQy3AD',
 				github: 'https://github.com/Marusoftware/Marron',
 			},
 			logo: {
 				src: "./src/assets/marron.png"
 			},
 			favicon: "favicon.png",
+			editLink: {
+				baseUrl: "https://github.com/Marusoftware/Marron-docs/edit/main/"
+			},
 			defaultLocale:"root",
 			locales: {
 				root: {
@@ -31,32 +38,17 @@ export default defineConfig({
 					translations: {
 						ja: "Marron について"
 					},
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Core cocepts', 
-						  translations:{ja: "全体設計"}, 
-						  slug: 'about/core' },
-						{ label: 'Contribution', 
-						  translations:{ja:"Marron プロジェクトへの参加"}, 
-						  slug: 'about/contribution' },
-						{ label: 'Relation to Policy', 
-						  translations:{ja:"ポリシーとの関係性"}, 
-						  slug: 'about/policy' },
-					],
+					autogenerate: {directory: 'about'}
 				},
 				{
 					label: 'About Marron Components',
 					translations: {
 						ja: "Marron の各機能について"
 					},
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Core and Auth', 
-						  translations: {ja:"Core と Auth"},
-						  slug: 'components/core' },
-					],
+					autogenerate: {directory: 'components'}
 				},
 			],
+			plugins: [starlightLinksValidator({errorOnRelativeLinks:false})],
 		}),
 	],
 });

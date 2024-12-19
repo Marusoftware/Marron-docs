@@ -1,19 +1,19 @@
 ---
 title: Core concepts
 description: Core concepts of Marron
+sidebar:
+  order: 1
 ---
 import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
 
 ## System Overview
 <CardGrid>
     <Card title='Multiplatform and Lightweight'>
-        To make usable for more people.
+        Server is works on anywhere, and lightweight even in browser.
+        Ofcource, you can host Marron on your machine.
     </Card>
     <Card title='Plug and Play'>
         You can add/replace components as you want.
-    </Card>
-    <Card title='Self hostable'>
-        Ofcource, you can host Marron on your machine.
     </Card>
     <Card title='Integrate across components'>
         You can use integtation across components.
@@ -26,22 +26,26 @@ import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
 Marron is the system with some components:
 
 <LinkCard title="Core & Auth"
-    href="../components/core"
+    href="../../components/core/"
     description='Core of Marron. Authentication and Plugin system to integrating with other component.'
 />
 
 <LinkCard title="Machine and Network(WIP)"
+    href="../../components/machine/"
     description='Physical Machine and other material management'
 />
 
 <LinkCard title="Project(WIP)"
+    href="../../components/project/"
     description="Project management"
 />
 
 <LinkCard title="Files(WIP)"
+    href="../../components/files/"
     description="File Management(Including viewer/editor, history management)"
 />
 
 <LinkCard title="Messaging(Mail & Chat)(WIP)"
+    href="../../components/messaging/"
     description="Messaging with other users."
 />

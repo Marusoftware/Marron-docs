@@ -1,19 +1,19 @@
 ---
-title: Core concepts
-description: Core concepts of Marron
+title: 全体設計
+description: Marronの全体的な設計
+sidebar:
+  order: 1
 ---
 import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
 
 ## システムの概要
 <CardGrid>
     <Card title='マルチプラットフォームで軽量'>
-        より多くの人が使えるように。
+        サーバは動作する場所を選ばず、ブラウザでも軽量に動作します。
+        もちろん、お持ちの機材の上で動作させることも可能です。
     </Card>
     <Card title='Plug and Play'>
         機能を追加したり置き換えたりも思いのままにできます。
-    </Card>
-    <Card title='自己ホスト可能'>
-        もちろん、お持ちの機材の上で動作させることも可能です。
     </Card>
     <Card title='機能を超えた連携'>
         機能を超えた連携による様々な体験を得ることができます。
@@ -23,25 +23,29 @@ import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
 
 ## 機能
 
-Marron は様々な機能が組み合わさってできています:
+Marron は様々な機能プラグインによって構成されています:
 
 <LinkCard title="Core & Auth"
-    href="../components/core"
+    href="../../components/core/"
     description='Marron のコア部分です。認証と機能同士を結びつけたりするためのプラグインシステムなどが搭載されています。'
 />
 
 <LinkCard title="Machine and Network(WIP)"
+    href="../../components/machine/"
     description='物理機器やその他の資源を管理します。'
 />
 
 <LinkCard title="Project(WIP)"
+    href="../../components/project/"
     description="プロジェクト管理"
 />
 
 <LinkCard title="Files(WIP)"
+    href="../../components/files/"
     description="ファイル管理(閲覧、編集及び履歴機能を搭載)"
 />
 
 <LinkCard title="Messaging(Mail & Chat)(WIP)"
+    href="../../components/messaging/"
     description="他のユーザとやり取りを行うことができます。"
 />

@@ -860,6 +860,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.45.tgz#2c0fafd78705e7a18b7906b5201a522719dc5190"
   integrity sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==
 
+"@types/picomatch@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/picomatch/-/picomatch-3.0.1.tgz#d2bb932bb24c2f2f97f77c31c3c37ddd60c9a4a5"
+  integrity sha512-1MRgzpzY0hOp9pW/kLRxeQhUWwil6gnrUYd3oEpeYBqp/FexhaCPv3F8LsYr47gtUU45fO2cm1dbwkSrHEo8Uw==
+
 "@types/sax@^1.2.1":
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/@types/sax/-/sax-1.2.7.tgz#ba5fe7df9aa9c89b6dff7688a19023dd2963091d"
@@ -1921,6 +1926,11 @@ inline-style-parser@0.2.4:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.2.4.tgz#f4af5fe72e612839fcd453d989a586566d695f22"
   integrity sha512-0aO8FkhNZlj/ZIbNi7Lxxr12obT7cL1moPfE4tg1LkX7LlLfC6DeX4l2ZEud1ukP9jNQyNnfzQVqwbwmAATY4Q==
+
+is-absolute-url@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/is-absolute-url/-/is-absolute-url-4.0.1.tgz#16e4d487d4fded05cfe0685e53ec86804a5e94dc"
+  integrity sha512-/51/TKE88Lmm7Gc4/8btclNXWS+g50wXhYJq8HWIBAGUBnoAdRu1aXeh364t/O7wXDAcTJDP8PNuNKWUDWie+A==
 
 is-alphabetical@^2.0.0:
   version "2.0.1"
@@ -3377,6 +3387,21 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
+
+starlight-links-validator@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/starlight-links-validator/-/starlight-links-validator-0.14.0.tgz#772c8fb34fc5c202d043c8c5f71b717fa7f69fab"
+  integrity sha512-mxaNtlSl+BR32PoBkFPymhNNttrozGLQan2Nkki7mzQw2Z+li5o3c1ltds+EnbIh/RuVm3xHUxZz8THQW6Xgbw==
+  dependencies:
+    "@types/picomatch" "^3.0.1"
+    github-slugger "^2.0.0"
+    hast-util-from-html "^2.0.3"
+    hast-util-has-property "^3.0.0"
+    is-absolute-url "^4.0.1"
+    kleur "^4.1.5"
+    mdast-util-to-string "^4.0.0"
+    picomatch "^4.0.2"
+    unist-util-visit "^5.0.0"
 
 stream-replace-string@^2.0.0:
   version "2.0.0"
