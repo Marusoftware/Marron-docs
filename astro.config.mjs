@@ -17,6 +17,14 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Core cocepts', slug: 'about/core' },
 						{ label: 'Contribution', slug: 'about/contribution' },
+						{ label: 'Relation to Policy', slug: 'about/policy' },
+					],
+				},
+				{
+					label: 'About Marron Components',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Core and Auth', slug: 'components/core' },
 					],
 				},
 			],
