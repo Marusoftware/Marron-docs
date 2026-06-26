@@ -10,10 +10,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Marron',
-			social: {
-				discord: 'https://discord.gg/hkBKdQy3AD',
-				github: 'https://github.com/Marusoftware/Marron',
-			},
+			social: [
+				{icon:'discord', label:'Discord', href:'https://discord.gg/hkBKdQy3AD'},
+				{icon:'github', label:'Github', href:'https://github.com/Marusoftware/Marron'},
+			],
 			logo: {
 				src: "./src/assets/marron.png"
 			},
@@ -33,20 +33,20 @@ export default defineConfig({
 				}
 			},
 			sidebar: [
-				{
-					label: 'About Marron',
-					translations: {
-						ja: "Marron について"
-					},
-					autogenerate: {directory: 'about'}
-				},
-				{
-					label: 'About Marron Components',
-					translations: {
-						ja: "Marron の各機能について"
-					},
-					autogenerate: {directory: 'components'}
-				},
+			    {
+                    label: 'About Marron',
+                    translations: {
+                        ja: "Marron について"
+                    },
+                    items:[{autogenerate: {directory: 'about'}}]
+                },
+                {
+                    label: 'About Marron Components',
+                    translations: {
+                        ja: "Marron の各機能について"
+                    },
+                    items:[{autogenerate: {directory: 'components'}}]
+                },
 			],
 			plugins: [starlightLinksValidator({errorOnRelativeLinks:false})],
 		}),
